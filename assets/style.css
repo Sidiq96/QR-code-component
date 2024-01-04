@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(./fonts/Outfit.ttf), url(./fonts/Outfit.woff);
+    font-weight: 1 999;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --fontOutfit: 'Outfit', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--Light-gray);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fontOutfit);
+}
+body p{
+    font-size: 15px;
+}
